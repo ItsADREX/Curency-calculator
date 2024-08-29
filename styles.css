@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.converter {
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(255,165,0,0.3);
+    width: 350px;
+    max-width: 95vw;
+}
+
+h1 {
+    text-align: center;
+    color: #ffa500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.display {
+    background-color: #3a3a3a;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2em;
+    color: #ffa500;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    word-break: break-all;
+}
+
+.currency-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 40%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.swap-icon {
+    font-size: 1.5em;
+    color: #ffa500;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.swap-icon:hover {
+    transform: rotate(180deg);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.number {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.operator {
+    background-color: #ffa500;
+    color: #1a1a1a;
+}
+
+.clear {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.convert {
+    background-color: #ffa500;
+    color: #1a1a1a;
+    grid-column: span 2;
+    font-weight: bold;
+}
+
+#lastUpdated {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+@media (max-width: 400px) {
+    .converter {
+        padding: 20px;
+    }
+    
+    .buttons {
+        gap: 10px;
+    }
+    
+    button {
+        font-size: 1em;
+        padding: 12px 8px;
+    }
+}

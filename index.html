@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Currency Converter</h1>
+        <div class="display" id="display">0</div>
+        <div class="currency-select">
+            <select id="fromCurrency"></select>
+            <div class="swap-icon" id="swapCurrencies">⇄</div>
+            <select id="toCurrency"></select>
+        </div>
+        <div class="buttons">
+            <button class="number" onclick="appendNumber(7)">7</button>
+            <button class="number" onclick="appendNumber(8)">8</button>
+            <button class="number" onclick="appendNumber(9)">9</button>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="appendNumber(4)">4</button>
+            <button class="number" onclick="appendNumber(5)">5</button>
+            <button class="number" onclick="appendNumber(6)">6</button>
+            <button class="operator" onclick="backspace()">⌫</button>
+            <button class="number" onclick="appendNumber(1)">1</button>
+            <button class="number" onclick="appendNumber(2)">2</button>
+            <button class="number" onclick="appendNumber(3)">3</button>
+            <button class="number" onclick="appendNumber(0)">0</button>
+            <button class="number" onclick="appendDecimal()">.</button>
+            <button class="convert" onclick="convert()">Convert</button>
+        </div>
+        <div id="lastUpdated"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
